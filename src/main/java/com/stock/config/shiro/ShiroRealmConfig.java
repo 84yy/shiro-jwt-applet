@@ -1,8 +1,8 @@
-package com.stock.infrastructure.config.shiro;
+package com.stock.config.shiro;
 
 
 import com.stock.domain.vo.JwtToken;
-import com.stock.infrastructure.config.jwt.JwtConfig;
+import com.stock.config.jwt.JwtConfig;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;

@@ -1,6 +1,6 @@
-package com.stock.infrastructure.config.shiro;
+package com.stock.config.shiro;
 
-import com.stock.infrastructure.config.jwt.JwtFilter;
+import com.stock.config.jwt.JwtFilter;
 import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
 import org.apache.shiro.mgt.DefaultSubjectDAO;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;

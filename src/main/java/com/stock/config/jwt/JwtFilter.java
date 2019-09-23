@@ -1,4 +1,4 @@
-package com.stock.infrastructure.config.jwt;
+package com.stock.config.jwt;
 
 import com.stock.domain.vo.JwtToken;
 import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;

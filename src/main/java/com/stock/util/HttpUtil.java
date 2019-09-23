@@ -1,4 +1,4 @@
-package com.stock.infrastructure.util;
+package com.stock.util;
 
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.util.UriComponentsBuilder;

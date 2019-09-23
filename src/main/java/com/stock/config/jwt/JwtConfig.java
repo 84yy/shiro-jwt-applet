@@ -1,4 +1,4 @@
-package com.stock.infrastructure.config.jwt;
+package com.stock.config.jwt;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;

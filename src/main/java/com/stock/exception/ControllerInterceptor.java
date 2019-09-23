@@ -1,7 +1,7 @@
-package com.stock.infrastructure.exception;
+package com.stock.exception;
 
 import com.alibaba.fastjson.JSON;
-import com.stock.infrastructure.exception.model.ExceptionResponse;
+import com.stock.exception.model.ExceptionResponse;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

@@ -1,4 +1,4 @@
-package com.stock.infrastructure.exception.model;
+package com.stock.exception.model;
 
 import lombok.Data;
 
