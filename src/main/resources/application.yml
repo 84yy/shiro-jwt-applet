@@ -13,19 +13,19 @@ spring:
 
 #  datasource本地配置
   datasource:
-    url: jdbc:mysql://localhost:3306/yourdatabase
-    username: yourname
-    password: yourpass
+    url: jdbc:mysql://${MYSQL_HOST:198.0.169.218}:${MYSQL_PORT:3306}/stock?useUnicode=true&characterEncoding=UTF8&useSSL=false
+    username: root
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
 
 #  redis本地配置 请自行配置
   redis:
-    database: 0
-    host: localhost
+    database: 10
+    host: 198.0.169.218
     port: 6379
 
 #  微信小程序配置 appid /appsecret
 wx:
   applet:
-    appid: yourappid
-    appsecret: yourappsecret
+    appid:
+    appsecret:

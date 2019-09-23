@@ -19,5 +19,7 @@ public class RedisConfig {
     public CacheManager cacheManager(RedisConnectionFactory factory) {
         return RedisCacheManager.create(factory);
     }
+
+
 }
 
