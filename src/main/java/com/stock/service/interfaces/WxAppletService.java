@@ -1,6 +1,9 @@
 package com.stock.service.interfaces;
 
 import com.stock.domain.dto.TokenDTO;
+import com.stock.domain.entity.WxAccount;
+
+import java.util.List;
 
 /**
  * Created by EalenXie on 2018/11/26 10:40.
@@ -21,5 +24,7 @@ public interface WxAppletService {
      * @return Token 返回后端 自定义登陆态 token  基于JWT实现
      */
     TokenDTO wxUserLogin(String code);
+
+    List<WxAccount> sqlTest(String openId);
 
 }

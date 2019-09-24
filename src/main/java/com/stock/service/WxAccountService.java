@@ -20,6 +20,7 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
 import java.net.URI;
+import java.util.List;
 
 /**
  * Created by EalenXie on 2018/11/26 10:50.
@@ -88,5 +89,10 @@ public class WxAccountService implements WxAppletService {
             String token = jwtConfig.createTokenByWxAccount(wxAccount);
             return new TokenDTO(token);
         }
+    }
+
+    @Override
+    public List<WxAccount> sqlTest(String openId) {
+       return wxAccountRepository.listByWxOpenId(openId);
     }
 }

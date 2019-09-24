@@ -1,5 +1,6 @@
 package com.stock.controller;
 
+import com.stock.domain.entity.WxAccount;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import com.stock.service.interfaces.WxAppletService;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -34,6 +36,7 @@ public class WxAppletController {
 
     @Value("${wx.applet.appsecret}")
     private String appSecret;
+
     /**
      * 微信小程序端用户登陆api
      * 返回给小程序端 自定义登陆态 token
@@ -62,4 +65,10 @@ public class WxAppletController {
         return "appid: " + appid + "    appSecret: " + appSecret;
     }
 
+
+    @GetMapping("/jpa/sql/test")
+    @ApiOperation("测试不需要权限的接口")
+    public List<WxAccount> sqlTest(String openId) {
+        return wxAppletService.sqlTest(openId);
+    }
 }
